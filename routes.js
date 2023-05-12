@@ -42,7 +42,7 @@ async function completions(req, res) {
     if (req.body.stream) {
         try {
             const response = await axios.post(
-                `https://api.openai.com/v1/completions`, req.body,
+                `https://api.pawan.krd/v1/completions`, req.body,
                 {
                     responseType: "stream",
                     headers: {
@@ -101,7 +101,7 @@ async function completions(req, res) {
     else {
         try {
             const response = await axios.post(
-                `https://api.openai.com/v1/completions`, req.body,
+                `https://api.pawan.krd/v1/completions`, req.body,
                 {
                     headers: {
                         Accept: "application/json",
@@ -178,7 +178,7 @@ async function chatCompletions(req, res) {
     if (req.body.stream) {
         try {
             const response = await axios.post(
-                `https://api.openai.com/v1/chat/completions`, req.body,
+                `https://api.pawan.krd/v1/chat/completions`, req.body,
                 {
                     responseType: "stream",
                     headers: {
@@ -240,7 +240,7 @@ async function chatCompletions(req, res) {
     else {
         try {
             const response = await axios.post(
-                `https://api.openai.com/v1/chat/completions`, req.body,
+                `https://api.pawan.krd/v1/chat/completions`, req.body,
                 {
                     headers: {
                         Accept: "application/json",
